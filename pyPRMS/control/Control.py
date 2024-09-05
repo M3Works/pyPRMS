@@ -181,7 +181,7 @@ class Control(object):
         """
 
         if self.exists(name):
-            raise ControlError("Control variable already exists")
+            raise ControlError(f"Control variable {name} already exists")
         self.__control_vars[name] = ControlVariable(name=name, meta=meta)
         # self.__control_vars[name] = ControlVariable(name=name, datatype=datatype, meta=meta)
 
